@@ -1,4 +1,4 @@
-export const DEBUGGING = false;
+export const DEBUGGING = true;
 
 export const COMMANDS: {
 	id: string;
@@ -84,6 +84,13 @@ export const COMMANDS: {
 	},
 
 	{
+		id: "smarter-math",
+		name: "Smarter Mathjax",
+		before: "$",
+		after: "$",
+	},
+
+	{
 		id: "smarter-quotation-marks",
 		name: "Smarter Quotation Mark",
 		before: "\"",
@@ -147,7 +154,8 @@ export const EXPANDWHENOUTSIDE = [
 	["", ";"],
 	["", "?"],
 	["", "!"],
-	["$", ""]
+	["$", ""],
+	["", "€"]
 ];
 
 export const IMAGEEXTENSIONS = [
